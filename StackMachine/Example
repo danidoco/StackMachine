@@ -1,0 +1,50 @@
+:intro goto
+
+loop:
+	over over +
+	dup 100000 < :print then
+else:
+	13 10 .c .c
+	:end goto
+
+
+
+
+
+
+intro:
+	70 .c
+	105 .c
+	98 .c
+	111 .c
+	110 .c
+	97 .c
+	99 .c
+	99 .c
+	105 .c
+	32 .c
+	83 .c
+	101 .c
+	113 .c
+	117 .c
+	101 .c
+	110 .c
+	99 .c
+	101 .c
+	13 10 .c .c
+	1 dup . 32 .c
+	1 dup . 32 .c
+	:loop goto
+
+print:
+	dup . 32 .c
+	:loop goto
+
+end:
+	68 .c
+	111 .c
+	110 .c
+	101 .c
+	33 .c
+	13 10 .c .c
+	quit
